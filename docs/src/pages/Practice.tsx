@@ -2,7 +2,7 @@
 // manually doing it is a pain
 
 import { Accordion, Row, Col } from 'react-bootstrap';
-import {client} from "../sanity/client";
+import {client} from "../sanity/client.ts";
 import { useState, useEffect} from "react"
 import type { WeeklyProblems, Presentation} from '../extra/types.ts';
 import "../scss/global.scss"
