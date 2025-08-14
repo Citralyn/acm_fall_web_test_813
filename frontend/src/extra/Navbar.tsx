@@ -13,7 +13,7 @@ export default function NavBar() {
       <Container>
         <Navbar.Brand href="#" className="d-flex align-items-center">
   <img
-    src="/navbar/acm-uci.svg"
+    src={import.meta.env.BASE_URL + "/navbar/acm-uci.svg"}
     alt="ACM Logo"
     style={{ height: '10vh', marginRight: '10px', verticalAlign: 'middle' }}
   />
@@ -28,14 +28,14 @@ export default function NavBar() {
             <Nav.Link href="#board">Board</Nav.Link>
             <Nav.Link target="_blank" href="https://discord.gg/MCtKPxC">
                 <img
-                    src={discordLogo}
+                    src={import.meta.env.BASE_URL + discordLogo}
                     alt="ACM@UCI Discord server invite"
                     width="20"
                 />
             </Nav.Link>
             <Nav.Link target="_blank" href="https://github.com/ACM-UCI/">
                 <img
-                    src={githubLogo}
+                    src={import.meta.env.BASE_URL + githubLogo}
                     alt="ACM@UCI GitHub"
                     width="20"
                 />

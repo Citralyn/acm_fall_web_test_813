@@ -26,12 +26,12 @@ export default function Footer() {
     </div>
     <div className="footer_logo_row">
       <Nav.Link target="_blank" href="https://discord.gg/MCtKPxC">
-        <img style={{width: "50%"}} src={discordLogo} alt="Discord" />
+        <img style={{width: "50%"}} src={import.meta.env.BASE_URL + discordLogo} alt="Discord" />
       </Nav.Link>
       <Nav.Link target="_blank" href="https://www.instagram.com/acm.uci/">
-        <img style={{width: "70%"}} src={instagramLogo} alt="Instagram" />
+        <img style={{width: "70%"}} src={import.meta.env.BASE_URL + instagramLogo} alt="Instagram" />
       </Nav.Link>
-      <a style={{marginLeft: "0.5vw"}} href="mailto:acm@uci.edu"><img style={{width: "80%"}} src={emailLogo} alt="Email" /></a>
+      <a style={{marginLeft: "0.5vw"}} href="mailto:acm@uci.edu"><img style={{width: "80%"}} src={import.meta.env.BASE_URL + emailLogo} alt="Email" /></a>
 
     </div>
   </div>
