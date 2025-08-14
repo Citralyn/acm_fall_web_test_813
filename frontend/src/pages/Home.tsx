@@ -159,7 +159,7 @@ function OurTeam() {
       <div className="our_team_row">
         <img src={team_symbol} alt="" />
         <h1 className="font-size-4">
-          {team_shoutout} <a href="/#board">VIEW BOARD</a>
+          {team_shoutout} <a href={import.meta.env.BASE_URL + "/#board"}>VIEW BOARD</a>
         </h1>
         <img src={team_symbol} alt="" />
       </div>
