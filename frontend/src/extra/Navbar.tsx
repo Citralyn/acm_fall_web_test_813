@@ -1,8 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import discordLogo from '/navbar/discord.svg';
-import githubLogo from '/navbar/github.svg';
 
 // this is taken from old website
 
@@ -28,14 +26,14 @@ export default function NavBar() {
             <Nav.Link href="#board">Board</Nav.Link>
             <Nav.Link target="_blank" href="https://discord.gg/MCtKPxC">
                 <img
-                    src={import.meta.env.BASE_URL + discordLogo}
+                    src={import.meta.env.BASE_URL +'/navbar/discord.svg'}
                     alt="ACM@UCI Discord server invite"
                     width="20"
                 />
             </Nav.Link>
             <Nav.Link target="_blank" href="https://github.com/ACM-UCI/">
                 <img
-                    src={import.meta.env.BASE_URL + githubLogo}
+                    src={import.meta.env.BASE_URL + '/navbar/github.svg'}
                     alt="ACM@UCI GitHub"
                     width="20"
                 />
