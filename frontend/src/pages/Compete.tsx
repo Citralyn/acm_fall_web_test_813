@@ -95,7 +95,7 @@ function NotSatisfied() {
   return (
     <div className="not_satisfied_wrapper">
       <h1 className="font-size-6">Still Not Satisified?</h1>
-      <h1 className="font-size-3">Check out our <a href="/#learn">learn</a> tab for additional resources and our <a href="/#practice">practice</a> tab for presentations and practice problems!</h1>
+      <h1 className="font-size-3">Check out our <a href={import.meta.env.BASE_URL + "/#learn"}>learn</a> tab for additional resources and our <a href={import.meta.env.BASE_URL + "/#practice"}>practice</a> tab for presentations and practice problems!</h1>
     </div>
   );
 
@@ -126,7 +126,7 @@ function HallOfChampions() {
 
                         <Carousel.Item>
               <img
-                src="/compete/hall_of_champions/icpc01.jpg"
+                src={import.meta.env.BASE_URL + "/compete/hall_of_champions/icpc01.jpg"}
                 className="carousel_image"
               />
               <Carousel.Caption>

@@ -114,7 +114,7 @@ function ClubPreview() {
         <div className="cp_section">
           <img src={newcomers_img} className="img-fluid" alt="Newcomers" />
           <div className="cp_text text-end font-size-4">
-            {newcomers_text} <a href="/#learn">LEARN MORE</a>
+            {newcomers_text} <a href={import.meta.env.BASE_URL + "/#learn"}>LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@ function ClubPreview() {
         <h1 className="font-size-8 text-start">Practice</h1>
         <div className="cp_section">
           <div className="cp_text text-start font-size-4">
-            {practice_text} <a href="/#practice">READ MORE</a>
+            {practice_text} <a href={import.meta.env.BASE_URL + "/#practice"}>READ MORE</a>
           </div>
           <img src={leetcode_img} className="img-fluid" alt="LeetCode" />
           <img src={codeforces_img} className="img-fluid" alt="Codeforces" />
@@ -137,7 +137,7 @@ function ClubPreview() {
         <div className="cp_section">
           <img src={compete_img} className="img-fluid" alt="Compete" />
           <div className="cp_text text-end font-size-4">
-            {compete_text} <a href="/#compete">SEE MORE</a>
+            {compete_text} <a href={import.meta.env.BASE_URL + "/#compete"}>SEE MORE</a>
           </div>
         </div>
       </div>
