@@ -6,7 +6,7 @@ import "../scss/global.scss"
 
 
 function CompeteBanner() {
-let compete_doodle = "/compete/compete_doodle.jpg";
+let compete_doodle = import.meta.env.BASE_URL + "/compete/compete_doodle.jpg";
 let compete_banner_main_header = "Achieve fame and victory by competing at ICPC";
 let compete_banner_sub_header = "Fame and victory not guaranteed. FUN is though!";
 
