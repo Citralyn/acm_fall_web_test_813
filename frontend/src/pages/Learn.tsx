@@ -8,10 +8,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import vscodeLogo from "/learn/VSCode.png";
-import vimLogo from "/learn/Vim.png";
-import neovimLogo from "/learn/Neovim.svg";
-import emacsLogo from "/learn/Emacs.png";
+
 import "../scss/global.scss";
 
 const Language = {
@@ -140,7 +137,7 @@ export default function Learn() {
                     <Col>
                         <Link to="https://code.visualstudio.com">
                             <Image
-                                src={import.meta.env.BASE_URL + vscodeLogo}
+                                src={import.meta.env.BASE_URL + "/learn/VSCode.png"}
                                 alt="Visual Studio Code logo"
                                 className="IDE_image"
                             />
@@ -149,7 +146,7 @@ export default function Learn() {
                     <Col>
                         <Link to="https://www.vim.org/">
                             <Image
-                                src={import.meta.env.BASE_URL + vimLogo}
+                                src={import.meta.env.BASE_URL + "/learn/Vim.png"}
                                 alt="Vim logo"
                                 className="IDE_image"
                             />
@@ -158,7 +155,7 @@ export default function Learn() {
                     <Col>
                         <Link to="https://neovim.io/">
                             <Image
-                                src={import.meta.env.BASE_URL + neovimLogo}
+                                src={import.meta.env.BASE_URL + "/learn/Neovim.svg"}
                                 alt="Neovim logo"
                                 className="IDE_image"
                             />
@@ -167,7 +164,7 @@ export default function Learn() {
                     <Col>
                         <Link to="https://www.gnu.org/software/emacs/">
                             <Image
-                                src={import.meta.env.BASE_URL + emacsLogo}
+                                src={import.meta.env.BASE_URL + "/learn/Emacs.png"}
                                 alt="Emacs logo"
                                 className="IDE_image"
                             />
