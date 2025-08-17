@@ -53,6 +53,74 @@ body {
   }
 }
 
+.section-title {
+  font-size: 2rem; /* default */
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 4rem; /* bigger on tablets */
+  }
+}
+
+
+
+.linkedin-icon {
+  width: 3vw;       /* default for large screens */
+  max-width: 3vw;
+}
+
+@media (max-width: 768px) {
+  .linkedin-icon {
+    width: 15vw;
+    max-width: 15vw;     /* bigger on tablets/phones */
+
+  }
+}
+
+.member-name {
+  font-size: 1.5rem;
+}
+
+.member-position {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .member-name {
+    font-size: 2.2rem;
+  }
+  .member-position {
+    font-size: 2rem;
+  }
+}
+
+
+.member-card {
+  margin-bottom: 1rem; /* default */
+}
+
+@media (max-width: 768px) {
+  .member-card {
+    margin-bottom: 5rem; /* bigger margin on tablets/phones */
+  }
+}
+
+
+.member-card-img {
+  width: 100%;
+  height: 25vh; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Optional: taller on small screens */
+@media (max-width: 768px) {
+  .member-card-img {
+    height: 30vh;
+  }
+}
+
 
 a {
   text-decoration: none !important;
@@ -370,19 +438,40 @@ margin: 0 0;
   height: auto;
 }
 
+
 .thank_you_message {
-   @include section-wrapper(white, 1%, 2%);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2vw; 
+  text-align: center;
+  gap: 1rem; /* spacing between confetti and text */
+  margin: 2rem 0;
   flex-wrap: nowrap; 
 }
 
 .board_confetti {
-  width: 50px;  /* adjust as needed */
+  width: 5rem; /* default for desktop */
   height: auto;
 }
+
+.thank_you_text {
+  min-height: 100px; /* default column height */
+  font-size: 1.5rem; /* desktop font-size */
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  .board_confetti {
+    width: 5rem; /* bigger confetti */
+  }
+
+  .thank_you_text {
+    min-height: 5vw; /* taller column for text */
+    font-size: 2rem; /* bigger text on mobile */
+  }
+}
+
+
 
 
 .navbar {
