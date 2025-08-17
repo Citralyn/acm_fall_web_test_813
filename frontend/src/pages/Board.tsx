@@ -14,7 +14,7 @@ function BoardBanner() {
     <div className="board_banner_wrapper d-flex justify-content-center align-items-center">
       <Row className="align-items-center">
           <Col xs={12} md={4} className="d-flex justify-content-center">
-            <img src={board_doodle} className="subpage_banner_image"></img>
+            <img src={board_doodle} className="subpage_banner_image fluid"></img>
           </Col>
           <Col xs={12} md={8} className="text-left">
             <h1 className="font-size-10">{board_banner_main_header}</h1>

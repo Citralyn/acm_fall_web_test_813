@@ -58,11 +58,7 @@ a {
   text-decoration: none !important;
 }
 
-.subpage_banner_image {
-  width: 30vw; 
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
+
 
 .carousel_image {
    width: 50vw; 
@@ -168,13 +164,37 @@ $default-padding: 2% !default;
 }
 
 .board_banner_wrapper {
+  /*
      @include section-wrapper(
   grey,
   0, 2%,      // margin, padding
   0, 0, 0, // margin-top, margin-bottom, margin-x
   10vh, 10vh, 5vw   // padding-top, padding-bottom, padding-x
-);
-  height: 70vh;
+);*/
+background-color: grey; 
+margin: 0 0; 
+  padding: 1vh 5vw; 
+  height: 40rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem 2rem; // medium screens
+    height: 30rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 4rem 3rem; // large screens
+    height: 40rem;
+  }
+}
+
+.subpage_banner_image {
+  width: 30vw; 
+  margin-top: 0vh;
+  margin-bottom: 5vh;
+
+  @media (max-width: 767px) {
+    width: 60vw;
+  }
 }
 
 .practice_dropdown {
