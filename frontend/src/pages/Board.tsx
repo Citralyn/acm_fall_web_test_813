@@ -128,22 +128,6 @@ function MemberCard({
   return capitalized;
 }
 
-const getImageSize = (position: any) => {
-  const key = position.toLowerCase();
-  if (["president", "internal-vp", "external-vp"].includes(key)) {
-    return 0.25;
-  }
-  if (["webmaster", "treasurer", "secretary", "events-coordinator"].includes(key)) {
-    return 0.20;
-  }
-  if (["faculty-advisor", "advisor-of-competition"].includes(key)) {
-    return 0.35;
-  }
-  return 0.2; 
-};
-
-const sizePercent = getImageSize(member.position) * 100; 
-
   return (
 
 <div
