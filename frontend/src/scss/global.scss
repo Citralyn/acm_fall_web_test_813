@@ -163,7 +163,7 @@ $default-padding: 2% !default;
   @include section-wrapper(white, 1%, 2%);
 }
 
-.board_banner_wrapper {
+.board_banner_wrapper, .compete_banner_wrapper, .practice_banner_wrapper, .learn_banner_wrapper {
   /*
      @include section-wrapper(
   grey,
@@ -210,6 +210,7 @@ margin: 0 0;
    @include section-wrapper(#E1ECF2, -1%, 1%);
 }
 
+/*
 .practice_banner_wrapper {
     @include section-wrapper(grey, 0, 5vw);
   height: 70vh;
@@ -236,6 +237,7 @@ margin: 0 0;
 );
   height: 70vh;
 }
+  */
 
 .icpc_wrapper {
   @include section-wrapper(white, 1%, 2%);
