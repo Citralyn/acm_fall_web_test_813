@@ -10,15 +10,18 @@ body {
 }
 
 .responsive-presentation-img {
-  width: 100%;           /* scale with the container width */
-  height: auto;          /* preserve aspect ratio */
-  max-width: 30vw;       /* optional: limit width relative to viewport */
-  max-height: 40vh;      /* optional: limit height relative to viewport */
-  object-fit: contain;   /* ensures the entire image is visible */
+  width: 30vw;
+  max-width: 30vw;   /* desktop size cap */
+  height: auto;
   display: block;
+  margin: 0 auto;     /* center it */
 }
 
-
+@media (max-width: 768px) {
+  .presentation-img {
+    max-width: 90vw;  /* make it much bigger on mobile */
+  }
+}
 
 
 

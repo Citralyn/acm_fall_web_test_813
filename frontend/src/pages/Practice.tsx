@@ -106,7 +106,7 @@ export default function Practice() {
             <Accordion.Header>{presentation?.title}</Accordion.Header>
             <Accordion.Body>
               <Row className="mb-3">
-                <Col>
+                <Col xs={12} md={6}>
                   <h5>Topic: {presentation?.title}</h5>
                   <p>{presentation?.description|| ""}</p>
                                   {presentation?.url ? (
@@ -119,7 +119,7 @@ export default function Practice() {
 
                 </Col>
                 <Col>
-                  <Col>
+                  <Col xs={12} md={6}>
   <h5>Presentation:</h5>
   <img
     src={presentation?.image ? urlFor(presentation.image).url() : ""}
