@@ -9,6 +9,12 @@ body {
   width: 4vw; 
 }
 
+@media (max-width: 768px) {
+  .board_confetti {
+    display: none;
+  }
+}
+
 .responsive-presentation-img {
   width: 30vw;
   max-width: 30vw;   /* desktop size cap */
@@ -407,7 +413,7 @@ padding: 0vw 5vw;
 .club_preview_wrapper {
   @include section-wrapper(white, 0, 0.5%);
 }
-
+/*
 .cp_section {
   display: flex;
   align-items: center;
@@ -432,6 +438,34 @@ padding: 0vw 5vw;
 
 .cp_text.text-end {
   text-align: right;
+}
+*/
+
+/* Default (desktop/tablet) */
+.cp_section img {
+  width: 100vw; 
+  height: auto;
+}
+
+/* 📱 Mobile (<=768px) */
+@media (max-width: 768px) {
+  .cp_section img {
+    width: 50vw; 
+    height: auto;
+  }
+}
+
+.cp_section img.practice-img {
+  width: 15vw;
+}
+
+
+/* 📱 On mobile */
+@media (max-width: 768px) {
+  .cp_section img.practice-img {
+   width: 20vw;
+  }
+
 }
 
 
@@ -544,6 +578,11 @@ padding: 0vw 5vw;
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .team_symbol {
+    display: none;
+  }
+}
 
 
 .window {
