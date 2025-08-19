@@ -113,7 +113,7 @@ function HallOfChampions() {
       <div className="hoc_carousel_wrapper">
       <Row className="align-items-center">
         <Col xs={12} md={9} className="d-flex justify-content-center">
-          <Carousel>
+          <Carousel className="hoc_carousel">
                         <Carousel.Item>
               <img
                 src={import.meta.env.BASE_URL + "/compete/hall_of_champions/icpc00.jpg"}

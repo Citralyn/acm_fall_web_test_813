@@ -275,13 +275,13 @@ padding: 0vw 5vw;
   height: 30rem;
 
   @media (min-width: 768px) {
-    background-color: pink;
+    background-color: grey;
     padding: 2rem 2rem; // medium screens
     height: 30rem;
   }
 
   @media (min-width: 1200px) {
-    background-color: red;
+    background-color: grey;
     padding: 4rem 4rem; // large screens
     height: 40rem;
   }
@@ -309,6 +309,13 @@ padding: 0vw 5vw;
 .practice_problem_wrapper {
    @include section-wrapper(#E1ECF2, -1%, 1%);
 }
+
+@media (max-width: 768px) {
+  .hoc_carousel .carousel-caption {
+    display: none !important;
+  }
+}
+
 
 /*
 .practice_banner_wrapper {
