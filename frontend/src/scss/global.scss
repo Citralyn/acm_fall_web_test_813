@@ -139,11 +139,24 @@ a {
   width: 15vw; 
 }
 
+// Base font sizes (desktop / default)
 @for $i from 1 through 40 {
   .font-size-#{$i} {
     font-size: #{$i * 0.5}vw;
+    line-height: 1.2; // default line height
   }
 }
+
+// 📱 Mobile override (<=768px)
+@media (max-width: 768px) {
+  @for $i from 1 through 40 {
+    .font-size-#{$i} {
+      font-size: #{($i * 0.5) * 2}vw; // double size
+      line-height: 1.4; // increase spacing for readability
+    }
+  }
+}
+
 
 .programming_language_wrapper {
   display: flex;
