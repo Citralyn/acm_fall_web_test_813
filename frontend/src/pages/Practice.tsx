@@ -43,8 +43,8 @@ function PracticeBanner() {
       <img src={practice_doodle} className="subpage_banner_image"></img>
     </Col>
     <Col xs={12} md={8} className="text-left">
-      <h1 className="font-size-10">{practice_banner_main_header}</h1>
-      <h1 className="font-size-6">{practice_banner_sub_header}</h1>
+      <h1 className="static-font-size-10">{practice_banner_main_header}</h1>
+      <h1 className="static-font-size-6">{practice_banner_sub_header}</h1>
     </Col>
   </Row>
 </div>

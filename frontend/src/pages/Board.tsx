@@ -17,8 +17,8 @@ function BoardBanner() {
             <img src={board_doodle} className="subpage_banner_image fluid"></img>
           </Col>
           <Col xs={12} md={8} className="text-left">
-            <h1 className="font-size-10">{board_banner_main_header}</h1>
-            <h1 className="font-size-6">{board_banner_sub_header}</h1>
+            <h1 className="static-font-size-10">{board_banner_main_header}</h1>
+            <h1 className="static-font-size-6">{board_banner_sub_header}</h1>
           </Col>
         </Row>
     </div>

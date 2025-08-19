@@ -140,6 +140,13 @@ a {
   width: 15vw; 
 }
 
+@for $i from 1 through 40 {
+  .static-font-size-#{$i} {
+    font-size: #{$i * 0.5}vw;
+    line-height: 1.2; 
+  }
+}
+
 // Base font sizes (desktop / default)
 @for $i from 1 through 40 {
   .font-size-#{$i} {

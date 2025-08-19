@@ -14,8 +14,8 @@ return (
   <div className="compete_banner_wrapper d-flex justify-content-center align-items-center">
     <Row className="align-items-center">
       <Col xs={12} md={8} className="text-left">
-        <h1 className="font-size-10">{compete_banner_main_header}</h1>
-        <h1 className="font-size-6">{compete_banner_sub_header}</h1>
+        <h1 className="static-font-size-10">{compete_banner_main_header}</h1>
+        <h1 className="static-font-size-6">{compete_banner_sub_header}</h1>
       </Col>
       <Col xs={12} md={4} className="d-flex justify-content-center">
         <img src={compete_doodle} className="subpage_banner_image"></img>
