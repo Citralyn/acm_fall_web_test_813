@@ -244,16 +244,18 @@ $default-padding: 2% !default;
 );*/
 background-color: grey; 
 margin: 0 0; 
-  padding: 1vh 5vw; 
-  height: 40rem;
+padding: 0vw 5vw; 
+  height: 30rem;
 
   @media (min-width: 768px) {
+    background-color: pink;
     padding: 2rem 2rem; // medium screens
     height: 30rem;
   }
 
   @media (min-width: 1200px) {
-    padding: 4rem 3rem; // large screens
+    background-color: red;
+    padding: 4rem 4rem; // large screens
     height: 40rem;
   }
 }
