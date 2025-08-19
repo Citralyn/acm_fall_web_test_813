@@ -42,19 +42,18 @@ body {
   justify-items: center;
 }
 
-
 .top_banner_image {
   width: 100%;
   max-width: 11vw;
   height: auto;
-  transition: transform 0.6s ease-in-out;
+  display: inline-block;
 }
 
-.top_banner_image:hover {
-  transform: rotate(360deg);
+.spin-animation {
+  animation: spinOnce 0.6s linear 1 forwards;
 }
 
-@keyframes spin {
+@keyframes spinOnce {
   from {
     transform: rotate(0deg);
   }
@@ -62,6 +61,8 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
 
 .section-title {
   font-size: 2rem; /* default */
@@ -316,6 +317,11 @@ padding: 0vw 5vw;
   }
 }
 
+@media (max-width: 768px) {
+  .programming_language_wrapper {
+    display: none !important;
+  }
+}
 
 /*
 .practice_banner_wrapper {

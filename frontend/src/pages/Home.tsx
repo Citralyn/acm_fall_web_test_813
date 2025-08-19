@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import SpinningImage from '../extra/SpinningImage';
 
 
 import "../scss/global.scss"
@@ -15,12 +16,14 @@ function TopBanner() {
   return (
     <div className="banner_header_wrapper">
       {top_banner_images.map((image: string, index: number) => (
-        <img key={index} src={import.meta.env.BASE_URL + image} className="top_banner_image" />
+        <SpinningImage key={index} src={import.meta.env.BASE_URL + image} />
+       
       ))}
     </div>
   );
 }
 
+ //<img key={index} src={import.meta.env.BASE_URL + image} className="top_banner_image" />
 function WhatIsACM() {
   let what_is_acm = "What Is ACM?"
   let acm_short_description = "ACM@UCI is UCI’s official competitive programming club on campus."
