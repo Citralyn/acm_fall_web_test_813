@@ -1,5 +1,4 @@
 
-import Nav from "react-bootstrap/Nav"
 
 import "../scss/global.scss"
 
