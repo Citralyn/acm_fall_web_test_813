@@ -169,7 +169,7 @@ function ClubPreview() {
       </Col>
       <Col xs={12} md={8} className="text-end">
         <div className="cp_text font-size-4">
-          {compete_text}{" "}
+          <h1 className="cp_text font-size-4">{compete_text}&nbsp;</h1>
           <a href={import.meta.env.BASE_URL + "/#compete"}>SEE MORE</a>
         </div>
       </Col>
