@@ -1,6 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
 
 import "../scss/global.scss"
 
@@ -11,7 +13,7 @@ let compete_banner_main_header = "Achieve fame and victory by competing at ICPC"
 let compete_banner_sub_header = "Fame and victory not guaranteed. FUN is though!";
 
 return (
-  <div className="compete_banner_wrapper d-flex justify-content-center align-items-center">
+  <div id="top" className="compete_banner_wrapper d-flex justify-content-center align-items-center">
     <Row className="align-items-center">
       <Col xs={12} md={8} className="text-left">
         <h1 className="static-font-size-10">{compete_banner_main_header}</h1>
@@ -95,7 +97,7 @@ function NotSatisfied() {
   return (
     <div className="not_satisfied_wrapper">
       <h1 className="font-size-6">Still Not Satisified?</h1>
-      <h1 className="font-size-3">Check out our <a href={import.meta.env.BASE_URL + "/#learn"}>learn</a> tab for additional resources and our <a href={import.meta.env.BASE_URL + "/#practice"}>practice</a> tab for presentations and practice problems!</h1>
+      <h1 className="font-size-3">Check out our <a href={import.meta.env.BASE_URL + "/#learn" + "#top"}>learn</a> tab for additional resources and our <a href={import.meta.env.BASE_URL + "/#practice" + "#top"}>practice</a> tab for presentations and practice problems!</h1>
     </div>
   );
 
@@ -207,6 +209,17 @@ function AdditionalResources() {
 
 
 export default function Compete() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const targetElement = document.querySelector(location.hash);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
+
   return (
     <div>
       <CompeteBanner></CompeteBanner>

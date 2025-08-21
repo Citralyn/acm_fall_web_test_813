@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "../sanity/client";
+import { useLocation } from 'react-router-dom';
 
 function BoardBanner() {
   let board_doodle = import.meta.env.BASE_URL + "/board/board_doodle.jpg";
@@ -11,7 +12,7 @@ function BoardBanner() {
   let board_banner_sub_header = "Check out the AGENTS of ACM below, and if you’re interested, get involved and join the team!"
 
   return (
-    <div className="board_banner_wrapper d-flex justify-content-center align-items-center">
+    <div id="top" className="board_banner_wrapper d-flex justify-content-center align-items-center">
       <Row className="align-items-center">
           <Col xs={12} md={4} className="d-flex justify-content-center">
             <img src={board_doodle} className="subpage_banner_image fluid"></img>
@@ -56,6 +57,16 @@ type BoardMember = {
 };
 
 export default function Board() {
+        const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const targetElement = document.querySelector(location.hash);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
   const [members, setMembers] = useState<BoardMember[]>([]);
 
   useEffect(() => {

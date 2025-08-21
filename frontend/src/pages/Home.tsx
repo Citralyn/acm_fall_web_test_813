@@ -137,7 +137,7 @@ function ClubPreview() {
       <Col xs={12} md={8} className="text-end">
         <div className="cp_text font-size-4">
           {newcomers_text}{" "}
-          <a href={import.meta.env.BASE_URL + "/#learn"}>LEARN MORE</a>
+          <a href={import.meta.env.BASE_URL + "/#learn" + "#top"}>LEARN MORE</a>
         </div>
       </Col>
     </Row>
@@ -150,7 +150,7 @@ function ClubPreview() {
       <Col xs={12} md={8} className="text-start">
         <div className="cp_text font-size-4">
           {practice_text}{" "}
-          <a href={import.meta.env.BASE_URL + "/#practice"}>READ MORE</a>
+          <a href={import.meta.env.BASE_URL + "/#practice" + "#top"}>READ MORE</a>
         </div>
       </Col>
       <Col xs={12} md={4} className="d-flex justify-content-center">
@@ -170,7 +170,7 @@ function ClubPreview() {
       <Col xs={12} md={8} className="text-end">
         <div className="cp_text font-size-4">
           <h1 className="cp_text font-size-4">{compete_text}&nbsp;</h1>
-          <a href={import.meta.env.BASE_URL + "/#compete"}>SEE MORE</a>
+          <a href={import.meta.env.BASE_URL + "/#compete" + "#top"}>SEE MORE</a>
         </div>
       </Col>
     </Row>
@@ -195,7 +195,7 @@ function OurTeam() {
     <img src={team_symbol} alt="" className="team_symbol" />
     <h1 className="font-size-4">
       {team_shoutout}{" "}
-      <a href={import.meta.env.BASE_URL + "/#board"}>VIEW BOARD</a>
+      <a href={import.meta.env.BASE_URL + "/#board" + "#top"}>VIEW BOARD</a>
     </h1>
     <img src={team_symbol} alt="" className="team_symbol" />
   </div>
