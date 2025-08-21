@@ -278,7 +278,7 @@ $default-padding: 2% !default;
 background-color: grey; 
 margin: 0 0; 
 padding: 0vw 5vw; 
-  height: 30rem;
+  height: 40rem;
 
   @media (min-width: 768px) {
     background-color: grey;
@@ -295,7 +295,7 @@ padding: 0vw 5vw;
 
 .subpage_banner_image {
   width: 30vw; 
-  margin-top: 0vh;
+  margin-top: 5vh;
   margin-bottom: 5vh;
 
   @media (max-width: 767px) {
