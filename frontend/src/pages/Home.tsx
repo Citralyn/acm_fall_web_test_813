@@ -99,7 +99,7 @@ function MissionStatement() {
 
   // can have mission statement (and other interchable text) be defined and imported from a messages file
   let our_mission = "OUR MISSION"
-  let mission_statement = "ACM@UCI is UCI's official competitive programming club, where coders of all kinds — those passionate about competitive programming, trying to get through technical interviews, or hoping to apply what they learn in their algorithms class — come together and solve problems! Each week, we host informative presentations on various topics in data structures and algorithms, including the divide and conquer paradigm, dynamic programming, and greedy algorithms. We also hold practice sessions on another day of the week after the session so members can internalize the concepts we cover. Sometimes, we host friendly programming contests for our members as well!"
+  let mission_statement = "ACM@UCI is UCI's official competitive programming club, where coders of all kinds — those passionate about competitive programming, trying to get through technical interviews, or hoping to apply what they learn in their algorithms class — come together and solve problems! Each week, we host informative presentations on various topics in data structures and algorithms, including the divide and conquer paradigm, dynamic programming, and greedy algorithms. We also hold practice sessions so that members can internalize the concepts we cover. Sometimes, we host friendly programming contests for our members as well!"
 
   return (
     <div className="mission_statement_wrapper">
