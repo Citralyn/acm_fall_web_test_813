@@ -172,10 +172,10 @@ function HallOfChampions() {
             <h1 className="font-size-4">Some of our more recent past champions include:</h1>
             <ul>
               <li>
-                Jerry Li (retired)
+                Jerry Li (graduated)
               </li>
               <li>
-                Thomas Neil (retired)
+                Thomas Neil (graduated)
               </li>
               <li>
                 Elijah Huang (4th year)
