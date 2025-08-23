@@ -103,7 +103,7 @@ export default function Learn() {
             <LearnBanner></LearnBanner>
             <Container className="p-5">
                 <Row className="gx-5">
-                    <h2 className="mb-4">What Is Competitive Programming?</h2>
+                    <h1 className="mb-4">What Is Competitive Programming?</h1>
                     <Col>
                         <div className="window">
                             <div className="top">
@@ -130,7 +130,7 @@ export default function Learn() {
                         </p>
                     </Col>
                 </Row>
-                <h2 className="my-4">Getting Started</h2>
+                <h1 className="my-4">Getting Started</h1>
                 <h5>
                     <strong>Choosing the Right Editor</strong>
                 </h5>
@@ -228,7 +228,7 @@ export default function Learn() {
                     solving a problem.
                 </p>
                 <Row>
-                    <h2 className="mt-4">Resources</h2>
+                    <h1 className="mt-4">Resources</h1>
                     <Col>
                         <Card >
                             <Card.Header>Books</Card.Header>

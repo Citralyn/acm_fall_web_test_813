@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+.custom_paragraph_font {
+  font-family: "Lekton", monospace;
+  font-weight: bold;
+}
+
+.custom_paragraph_font2 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+}
 body {
+  
   overflow-x: hidden; 
 }
 
@@ -255,7 +270,9 @@ $default-padding: 2% !default;
 }
 
 .icpc_involve_desc_wrapper {
+
   @include section-wrapper(#B3CBF5, 1%, 2%);
+  padding: 2vw; 
 }
 
 .icpc_involve_desc_wrapper > h1{
@@ -291,6 +308,12 @@ padding: 0vw 5vw;
     padding: 4rem 4rem; // large screens
     height: 40rem;
   }
+
+  @media (min-width: 1440px) {
+     background-color: grey;
+     padding: 4rem 4rem; // large screens
+    height: 50rem;
+}
 }
 
 .subpage_banner_image {
@@ -459,6 +482,15 @@ padding: 0vw 5vw;
 }
 */
 
+.cp_section {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.cp_text {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
 /* Default (desktop/tablet) */
 .cp_section img {
   width: 100vw; 
@@ -481,7 +513,20 @@ padding: 0vw 5vw;
 /* 📱 On mobile */
 @media (max-width: 768px) {
   .cp_section img.practice-img {
-   width: 20vw;
+   width: 30vw;
+  }
+
+}
+
+.cp_section img.compete-img {
+  width: 85vw;
+}
+
+
+/* 📱 On mobile */
+@media (max-width: 768px) {
+  .cp_section img.compete-img {
+   width: 100vw;
   }
 
 }

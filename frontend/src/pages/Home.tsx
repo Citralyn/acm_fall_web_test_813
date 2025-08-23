@@ -32,7 +32,7 @@ function WhatIsACM() {
   let acm_with_balloons = import.meta.env.BASE_URL + "/home/what_is_acm/acm_balloons_doodle.png"
 
   return (
-<div className="what_is_acm_wrapper shadow rounded">
+<div className="custom_font what_is_acm_wrapper shadow rounded">
   <Row className="align-items-center">
     {/* Title always on top */}
     <Col xs={12} className="order-1 text-center text-md-start">
@@ -104,7 +104,7 @@ function MissionStatement() {
   return (
     <div className="mission_statement_wrapper">
       <h1 className="font-size-12">{our_mission}</h1>
-      <h1 className="font-size-3">{mission_statement}</h1>
+      <h1 className="custom_paragraph_font2 font-size-3">{mission_statement}</h1>
     </div>
   )
 }
@@ -136,7 +136,7 @@ function ClubPreview() {
       </Col>
       <Col xs={12} md={8} className="text-end">
         <div className="cp_text font-size-4">
-          {newcomers_text}{" "}
+          <h1 className="font-size-4 custom_paragraph_font">{newcomers_text}&nbsp;</h1>
           <a href={import.meta.env.BASE_URL + "/#learn" + "#top"}>LEARN MORE</a>
         </div>
       </Col>
@@ -149,7 +149,7 @@ function ClubPreview() {
     <Row className="align-items-center cp_section">
       <Col xs={12} md={8} className="text-start">
         <div className="cp_text font-size-4">
-          {practice_text}{" "}
+          <h1 className="custom_paragraph_font font-size-4">{practice_text}&nbsp;</h1>
           <a href={import.meta.env.BASE_URL + "/#practice" + "#top"}>READ MORE</a>
         </div>
       </Col>
@@ -165,11 +165,11 @@ function ClubPreview() {
     <h1 className="font-size-8 text-start">Compete</h1>
     <Row className="align-items-center cp_section">
       <Col xs={12} md={4}>
-        <img src={compete_img} className="img-fluid" alt="Compete" />
+        <img src={compete_img} className="compete-img img-fluid" alt="Compete" />
       </Col>
       <Col xs={12} md={8} className="text-end">
         <div className="cp_text font-size-4">
-          <h1 className="cp_text font-size-4">{compete_text}&nbsp;</h1>
+          <h1 className="custom_paragraph_font font-size-4">{compete_text}&nbsp;</h1>
           <a href={import.meta.env.BASE_URL + "/#compete" + "#top"}>SEE MORE</a>
         </div>
       </Col>
