@@ -297,6 +297,13 @@ margin: 0 0;
 padding: 0vw 5vw; 
   height: 30rem;
 
+  @media (min-width: 540px) {
+    background-color: grey;
+    padding: 2rem 2rem; // medium screens
+    height: 40rem;
+  }
+
+
   @media (min-width: 768px) {
     background-color: grey;
     padding: 2rem 2rem; // medium screens
